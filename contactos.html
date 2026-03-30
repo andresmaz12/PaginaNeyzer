@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Página de Ejemplo - Especialistas en venta de repuestos y accesorios para vehículos con cotizaciones en línea.">
         <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-        <link rel="stylesheet" href="stylessIndex.css">
+        <link rel="stylesheet" href="stylessContactos.css">
         <link rel="icon" href="favicon.ico" type="image/x-icon">
         <title>Pagina Ejemplo - Repuestos Automotrices</title>
         <noscript>
@@ -40,53 +40,68 @@
 
         <nav class="navbar" id="main-nav">
             <ul>
-                <li><a href="paginaPrincipal.html" class="active" aria-current="page">Inicio</a></li>
-                <li><a href="cotizaciones.html">Catalogo</a></li>
-                <li><a href="contactos.html">Contacto</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="cotizaciones.html" >Catalogo</a></li>
+                <li><a href="contactos.html"  class="active" aria-current="page">Contacto</a></li>
             </ul>
         </nav>
 
         <main class="main-content">
 
-            <!-- HERO -->
-            <section class="hero">
-                <div class="hero-logo">
-                    <div class="hero-logo-sub">PINCHAZO</div>
-                    <div class="hero-logo-brand">EL CENTRO</div>
-                    <div class="hero-logo-icon">🔧🏍️</div>
+            <!-- ENCUÉNTRANOS EN -->
+            <section class="contacto-ubicacion">
+                <div class="ubicacion-texto">
+                    <h2>Encuéntranos en:</h2>
                 </div>
-                <div class="hero-text">
-                    <span>¡El mejor lugar</span> para conseguir neumáticos y accesorios para tu vehículo!
+                <div class="ubicacion-mapa">
+                    <!-- Reemplaza las coordenadas con tu ubicación real -->
+                    <iframe
+                        src="https://www.openstreetmap.org/export/embed.html?bbox=-91.535%2C14.820%2C-91.495%2C14.850&layer=mapnik"
+                        width="100%"
+                        height="180"
+                        style="border:none; border-radius:4px;"
+                        loading="lazy"
+                        title="Ubicación El Centro">
+                    </iframe>
                 </div>
             </section>
 
-            <!-- QUIÉNES SOMOS -->
-            <section class="quienes">
-                <h2 class="section-title">¿Quiénes somos?</h2>
-                <div class="quienes-grid">
-                    <p>
-                        Somos una empresa familiar con más de 35 años de experiencia en la venta y reparación de llantas para motos y automóviles. Nos especializamos en ofrecer una amplia variedad de marcas y modelos, combinando productos de calidad con servicio técnico profesional: montaje y reparación rápida y segura. Nuestro compromiso es garantizar tu seguridad y comodidad en la carretera, asesorándote para elegir la llanta adecuada según tu vehículo y estilo de conducción. Confianza, experiencia y atención personalizada nos distinguen.
-                    </p>
-                    <div class="quienes-foto">
-                        <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=600&q=80" alt="Instalaciones El Centro"/>
+            <!-- HORARIOS + FORMULARIO -->
+            <section class="contacto-info">
+
+                <!-- Horarios -->
+                <div class="contacto-horarios">
+                    <p><strong>Horarios:</strong></p>
+                    <p><u><strong>Lunes a Viernes:</strong></u></p>
+                    <p>99:99 am - 99:99 pm</p>
+                    <p><strong>Sabado:</strong></p>
+                    <p>99:99 am - 99:99pm</p>
+                    <br>
+                    <p><u>correo:</u></p>
+                    <p>correo@dirreccion.com</p>
+                    <br>
+                    <p><u>Pbx: 999999999</u></p>
+                </div>
+
+                <!-- Formulario -->
+                <div class="contacto-form">
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label for="correo">Correo:</label>
+                        <input type="email" id="correo" name="correo" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+                    </div>
+                    <div class="form-submit">
+                        <button type="submit" class="btn-enviar">Enviar</button>
                     </div>
                 </div>
-            </section>
 
-            <!-- MISIÓN / VISIÓN -->
-            <section class="mv-section">
-                <div class="mv-card">
-                    <h3>Misión</h3>
-                    <p>
-                        Proveemos soluciones integrales en llantas para motos y automóviles, ofreciendo productos de calidad y servicios técnicos profesionales que garanticen la seguridad y satisfacción de nuestros clientes. Mantenemos una atención personalizada, precios justos y soporte técnico confiable, respaldados por más de 35 años de experiencia y compromiso con la confianza y el desempeño en la carretera.
-                    </p>
-                </div>
-                <div class="mv-card">
-                    <h3>Visión</h3>
-                    <p>
-                        Ser la referencia líder en venta y servicio de llantas para motos y automóviles en la región, reconocidos por la calidad, innovación y confianza que ofrecemos. Aspiramos a ampliar nuestra cobertura, incorporar tecnologías y prácticas sostenibles, y fortalecer la relación con clientes y marcas, manteniendo la excelencia técnica y el servicio personalizado que nos ha caracterizado desde hace más de 35 años.
-                    </p>
-                </div>
             </section>
 
         </main>
@@ -114,7 +129,7 @@
                     <address>
                         <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Dirección: Calle Principal #123</p>
                         <p><i class="fas fa-phone" aria-hidden="true"></i> Teléfono: (123) 456-7890</p>
-                        <p><i class="fas fa-envelope" aria-hidden="true"></i> Email: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="8be2e5ede4cbeafeffe4fbeaf9ffeef8eee7f8eafbe4a5e8e4e6">[email&#160;protected]</a></p>
+                        <p><i class="fas fa-envelope" aria-hidden="true"></i> Email: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="e38a8d858ca38296978c938291978690868f9082938ccd808c8e">[email&#160;protected]</a></p>
                     </address>
                 </div>
                 <div class="footer-section">

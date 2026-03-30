@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Página de Ejemplo - Especialistas en venta de repuestos y accesorios para vehículos con cotizaciones en línea.">
         <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-        <link rel="stylesheet" href="stylessIndex.css">
+        <link rel="stylesheet" href="stylessCatalogo.css">
         <link rel="icon" href="favicon.ico" type="image/x-icon">
         <title>Pagina Ejemplo - Repuestos Automotrices</title>
         <noscript>
@@ -40,52 +40,49 @@
 
         <nav class="navbar" id="main-nav">
             <ul>
-                <li><a href="paginaPrincipal.html" class="active" aria-current="page">Inicio</a></li>
-                <li><a href="cotizaciones.html">Catalogo</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="cotizaciones.html"  class="active" aria-current="page">Catalogo</a></li>
                 <li><a href="contactos.html">Contacto</a></li>
             </ul>
         </nav>
 
         <main class="main-content">
 
-            <!-- HERO -->
-            <section class="hero">
-                <div class="hero-logo">
-                    <div class="hero-logo-sub">PINCHAZO</div>
-                    <div class="hero-logo-brand">EL CENTRO</div>
-                    <div class="hero-logo-icon">🔧🏍️</div>
-                </div>
-                <div class="hero-text">
-                    <span>¡El mejor lugar</span> para conseguir neumáticos y accesorios para tu vehículo!
-                </div>
+            <!-- HERO TALLER -->
+            <section class="catalogo-hero">
+                <img 
+                    src="https://images.unsplash.com/photo-1625047509248-ec889cbff17f?w=900&q=80" 
+                    alt="Taller mecánico El Centro"
+                    class="catalogo-hero-img"
+                />
             </section>
 
-            <!-- QUIÉNES SOMOS -->
-            <section class="quienes">
-                <h2 class="section-title">¿Quiénes somos?</h2>
-                <div class="quienes-grid">
-                    <p>
-                        Somos una empresa familiar con más de 35 años de experiencia en la venta y reparación de llantas para motos y automóviles. Nos especializamos en ofrecer una amplia variedad de marcas y modelos, combinando productos de calidad con servicio técnico profesional: montaje y reparación rápida y segura. Nuestro compromiso es garantizar tu seguridad y comodidad en la carretera, asesorándote para elegir la llanta adecuada según tu vehículo y estilo de conducción. Confianza, experiencia y atención personalizada nos distinguen.
-                    </p>
-                    <div class="quienes-foto">
-                        <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=600&q=80" alt="Instalaciones El Centro"/>
+            <!-- TÍTULO MARCAS -->
+            <section class="marcas-section">
+                <div class="marcas-titulo-wrap">
+                    <h2 class="marcas-titulo">Conoce las marcas que manejamos</h2>
+                </div>
+
+                <!-- GRID DE LOGOS -->
+                <div class="marcas-grid">
+                    <div class="marca-card">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Bridgestone_logo.svg/320px-Bridgestone_logo.svg.png" alt="Bridgestone"/>
                     </div>
-                </div>
-            </section>
-
-            <!-- MISIÓN / VISIÓN -->
-            <section class="mv-section">
-                <div class="mv-card">
-                    <h3>Misión</h3>
-                    <p>
-                        Proveemos soluciones integrales en llantas para motos y automóviles, ofreciendo productos de calidad y servicios técnicos profesionales que garanticen la seguridad y satisfacción de nuestros clientes. Mantenemos una atención personalizada, precios justos y soporte técnico confiable, respaldados por más de 35 años de experiencia y compromiso con la confianza y el desempeño en la carretera.
-                    </p>
-                </div>
-                <div class="mv-card">
-                    <h3>Visión</h3>
-                    <p>
-                        Ser la referencia líder en venta y servicio de llantas para motos y automóviles en la región, reconocidos por la calidad, innovación y confianza que ofrecemos. Aspiramos a ampliar nuestra cobertura, incorporar tecnologías y prácticas sostenibles, y fortalecer la relación con clientes y marcas, manteniendo la excelencia técnica y el servicio personalizado que nos ha caracterizado desde hace más de 35 años.
-                    </p>
+                    <div class="marca-card">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Michelin_logo.svg/320px-Michelin_logo.svg.png" alt="Michelin"/>
+                    </div>
+                    <div class="marca-card">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Goodyear_logo.svg/320px-Goodyear_logo.svg.png" alt="Goodyear"/>
+                    </div>
+                    <div class="marca-card">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Continental_AG_logo.svg/320px-Continental_AG_logo.svg.png" alt="Continental"/>
+                    </div>
+                    <div class="marca-card">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Pirelli-logo.svg/320px-Pirelli-logo.svg.png" alt="Pirelli"/>
+                    </div>
+                    <div class="marca-card">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Dunlop_Logo.svg/320px-Dunlop_Logo.svg.png" alt="Dunlop"/>
+                    </div>
                 </div>
             </section>
 
@@ -114,7 +111,7 @@
                     <address>
                         <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Dirección: Calle Principal #123</p>
                         <p><i class="fas fa-phone" aria-hidden="true"></i> Teléfono: (123) 456-7890</p>
-                        <p><i class="fas fa-envelope" aria-hidden="true"></i> Email: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="8be2e5ede4cbeafeffe4fbeaf9ffeef8eee7f8eafbe4a5e8e4e6">[email&#160;protected]</a></p>
+                        <p><i class="fas fa-envelope" aria-hidden="true"></i> Email: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="aec7c0c8c1eecfdbdac1decfdcdacbddcbc2ddcfdec180cdc1c3">[email&#160;protected]</a></p>
                     </address>
                 </div>
                 <div class="footer-section">
